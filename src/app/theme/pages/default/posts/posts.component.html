@@ -1,0 +1,52 @@
+  <div *ngFor="let post of feeds" class="feed-card m-portlet m-portlet--mobile">
+    <div class="m-portlet__head">
+      <div class="m-portlet__head-caption">
+        <div class="feed-card-title align-items-center m-portlet__head-title">
+          <!--<span class="m-portlet__head-icon">-->
+          <!--<i class="la la-thumb-tack m&#45;&#45;font-success"></i>-->
+          <!--</span>-->
+          <span class="round-avatar m-topbar__userpic">
+
+            <img [src]="userDetails?.avatar" class=" m--marginless m--img-centered" alt="" />
+          </span>
+
+          <div class="title-text m-portlet__head-text m--font-success justify-content-center">
+            <h3>
+              {{profile.username}}
+            </h3>
+            <span>{{post.created_timeView}}</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="m-portlet__body">
+      <div class="body-image justify-content-center">
+        <img [src]="post.images">
+      </div>
+      <div class="body-description">
+        {{post.description}}
+      </div>
+    </div>
+    <div class="m-portlet__foot">
+      <div class="row align-items-start">
+        <!--<div class="col-lg-6 m&#45;&#45;valign-middle">-->
+        <!--Portlet footer:-->
+        <!--</div>-->
+        <div class="col-lg-6 m--align-left">
+
+          <a href="#" class="m-link m--font-bold">
+            <i class="la la-thumbs-up"></i> Like
+          </a>
+          <span class="m--margin-left-20">
+
+          </span>
+          <a href="#" class="m-link m--font-bold">
+            <i class="la la-comment"></i>
+            Comment
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>

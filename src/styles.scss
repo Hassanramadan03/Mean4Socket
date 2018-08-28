@@ -1,0 +1,30 @@
+.m-dropdown.m-dropdown--align-center.m-dropdown--large .m-dropdown__wrapper {
+  width: 260px;
+}
+
+.m-dropdown.m-dropdown--arrow .m-dropdown__arrow, .m-dropdown.m-dropdown--arrow.m-dropdown--up .m-dropdown__arrow {
+  left: 73%;
+}
+
+.m-badge.m-badge--dot-small {
+  width: 6px;
+  height: 6px;
+}
+
+.round-avatar {
+  width: 50px !important;
+  height: 50px !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.m-stack.m-stack--ver.m-stack--desktop {
+  background-color: white;
+}
+
+.clickable {
+  cursor: pointer;
+}

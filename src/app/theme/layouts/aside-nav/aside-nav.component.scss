@@ -1,0 +1,10 @@
+@import "../../../../assets/stylesheets/color_theme";
+
+html body {
+  .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__section .m-menu__section-text {
+    color: $lightColor;
+  }
+  .m-aside-left.m-aside-left--skin-dark {
+    background-color: $darkColor;
+  }
+}

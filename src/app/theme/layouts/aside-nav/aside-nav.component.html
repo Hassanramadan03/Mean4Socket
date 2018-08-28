@@ -1,0 +1,227 @@
+<!-- BEGIN: Left Aside -->
+<button class="m-aside-left-close  m-aside-left-close--skin-dark" id="m_aside_left_close_btn" appunwraptag="">
+    <i class="la la-close"></i>
+</button>
+<div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark">
+    <!-- BEGIN: Aside Menu -->
+    <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark"
+         data-menu-vertical="true" data-menu-scrollable="false" data-menu-dropdown-timeout="500">
+        <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow">
+            <li  class="m-menu__item "
+                routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: false }"
+                aria-haspopup="true">
+                <a routerLink="/admin/dashboard" class="m-menu__link">
+                    <i class="m-menu__link-icon flaticon-line-graph"></i>
+                    <span class="m-menu__link-title">
+						<span class="m-menu__link-wrap">
+							<span class="m-menu__link-text">
+								Dashboard
+							</span>
+                            <!--<span class="m-menu__link-badge">-->
+                            <!--<span class="m-badge m-badge&#45;&#45;danger">-->
+                            <!--2-->
+                            <!--</span>-->
+                            <!--</span>-->
+						</span>
+					</span>
+                </a>
+            </li>
+
+            <li  class="m-menu__section">
+                <h4 class="m-menu__section-text">
+                    Users Management
+                </h4>
+                <i class="m-menu__section-icon flaticon-more-v3"></i>
+            </li>
+            <li  class="m-menu__item"
+                routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+                aria-haspopup="true">
+                <a routerLink="/feed" class="m-menu__link">
+                    <i class="m-menu__link-icon fa fa-users"></i>
+                    <span class="m-menu__link-text">
+            Channels
+            </span>
+                </a>
+            </li>
+            <li  class="m-menu__item"
+                routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+                aria-haspopup="true">
+                <a routerLink="/admin/content-creators" class="m-menu__link">
+                    <i class="m-menu__link-icon fa fa-user-circle-o"></i>
+                    <span class="m-menu__link-text">
+Content Creators
+                    </span>
+                </a>
+            </li>
+
+            <li  class="m-menu__item"
+                routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+                aria-haspopup="true">
+                <a routerLink="/admin/content-creators-managers" class="m-menu__link">
+                    <i class="m-menu__link-icon fa fa-user-circle-o"></i>
+                    <span class="m-menu__link-text">
+Content Creators Manager
+                    </span>
+                </a>
+            </li>
+
+            <li  class="m-menu__item"
+                routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+                aria-haspopup="true">
+                <a routerLink="/admin/content-creators-managers" class="m-menu__link">
+                    <i class="m-menu__link-icon la 	la-user-secret"></i>
+                    <span class="m-menu__link-text">
+            Admins
+            </span>
+                </a>
+            </li>
+
+
+            <li  class="m-menu__item  m-menu__item--submenu"
+                routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true"
+                data-menu-submenu-toggle="hover">
+                <a href="#" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-line-graph"></i>
+                    <span class="m-menu__link-text">
+						Dashboard
+					</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu" >
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" routerLinkActive="m-menu__item--active"
+                            routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+                            <a href="#" class="m-menu__link">
+								<span class="m-menu__link-text">
+									Reports
+								</span>
+                            </a>
+                        </li>
+                        <li class="m-menu__item" routerLinkActive="m-menu__item--active"
+                            routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+                            <a routerLink="/tierGrowth" class="m-menu__link">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">
+									Tier Growth
+								</span>
+                            </a>
+                        </li>
+                        <li class="m-menu__item" routerLinkActive="m-menu__item--active"
+                            routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+                            <a routerLink="/engagement" class="m-menu__link">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">
+									Engagement
+								</span>
+                            </a>
+                        </li>
+                        <li class="m-menu__item" routerLinkActive="m-menu__item--active"
+                            routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+                            <a routerLink="/usersList" class="m-menu__link">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">
+									User List
+								</span>
+                            </a>
+                        </li>
+                        <li class="m-menu__item" routerLinkActive="m-menu__item--active"
+                            routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+                            <a routerLink="/refund" class="m-menu__link">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">
+									Refund Summary
+								</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li class="m-menu__section">
+                <h4 class="m-menu__section-text">
+                    Preferences
+                </h4>
+                <i class="m-menu__section-icon flaticon-more-v3"></i>
+            </li>
+            <li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+                aria-haspopup="true">
+                <a routerLink="/settings" class="m-menu__link">
+                    <i class="m-menu__link-icon flaticon-settings"></i>
+                    <span class="m-menu__link-text">
+            Settings
+            </span>
+                </a>
+            </li>
+
+            <!--<li class="m-menu__item  m-menu__item&#45;&#45;submenu" routerLinkActive="m-menu__item&#45;&#45;active"-->
+            <!--routerLinkActiveOptions="{ exact: true }" aria-haspopup="true" data-menu-submenu-toggle="hover">-->
+            <!--<a href="#" class="m-menu__link m-menu__toggle">-->
+            <!--<i class="m-menu__link-icon flaticon-settings"></i>-->
+            <!--<span class="m-menu__link-text">-->
+            <!--Users Management-->
+            <!--</span>-->
+            <!--<i class="m-menu__ver-arrow la la-angle-right"></i>-->
+            <!--</a>-->
+            <!--<div class="m-menu__submenu">-->
+            <!--<span class="m-menu__arrow"></span>-->
+            <!--<ul class="m-menu__subnav">-->
+            <!--<li class="m-menu__item  m-menu__item&#45;&#45;parent" routerLinkActive="m-menu__item&#45;&#45;active"-->
+            <!--routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">-->
+            <!--<a href="#" class="m-menu__link">-->
+            <!--<span class="m-menu__link-text">-->
+            <!--Admins-->
+            <!--</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="m-menu__item" routerLinkActive="m-menu__item&#45;&#45;active"-->
+            <!--routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">-->
+            <!--<a routerLink="/angular/primeng/input" class="m-menu__link">-->
+            <!--<i class="m-menu__link-bullet m-menu__link-bullet&#45;&#45;dot">-->
+            <!--<span></span>-->
+            <!--</i>-->
+            <!--<span class="m-menu__link-text">-->
+            <!--Content Creator-->
+            <!--</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="m-menu__item" routerLinkActive="m-menu__item&#45;&#45;active"-->
+            <!--routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">-->
+            <!--<a routerLink="/angular/primeng/button" class="m-menu__link">-->
+            <!--<i class="m-menu__link-bullet m-menu__link-bullet&#45;&#45;dot">-->
+            <!--<span></span>-->
+            <!--</i>-->
+            <!--<span class="m-menu__link-text">-->
+            <!--Content Creator Managers-->
+            <!--</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="m-menu__item" routerLinkActive="m-menu__item&#45;&#45;active"-->
+            <!--routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">-->
+            <!--<a routerLink="/angular/primeng/panel" class="m-menu__link">-->
+            <!--<i class="m-menu__link-bullet m-menu__link-bullet&#45;&#45;dot">-->
+            <!--<span></span>-->
+            <!--</i>-->
+            <!--<span class="m-menu__link-text">-->
+            <!--Panel-->
+            <!--</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</li>-->
+
+        </ul>
+    </div>
+    <!-- END: Aside Menu -->
+</div>
+<!-- END: Left Aside -->

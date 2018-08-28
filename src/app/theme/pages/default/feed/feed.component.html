@@ -1,0 +1,98 @@
+<div class="m-content uk-animation-slide-bottom-small">
+    <form class="example-form">
+        <mat-form-field class="example-container">
+            <input matInput placeholder="channel name" name="name.name" [(ngModel)]="name.name" [value]="name.name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-select placeholder="users" name="user" [(ngModel)]="user" [value]="user" multiple>
+                <mat-option *ngFor="let users of usersList" [value]="users">{{users.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-select placeholder="channel kind" name="type" [(ngModel)]="type" [value]="type">
+                <mat-option *ngFor="let kind of kinds" [value]="kind.value">
+                    {{ kind.viewValue }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button class="btn btn-primary" (click)='createChannel()' mat-button>Add channel</button>
+
+    </form>
+    <!-- <mat-divider></mat-divider>
+ -->
+    <hr>
+    <!-- <div uk-grid class="uk-flex uk-flex-center"> -->
+    <div class="row">
+            <div class="col-xs-6">
+                    <label for="">Pubic</label>
+        
+                    <div class="uk-width-3-5@m uk-width-1-1@s">
+                        <mat-accordion *ngFor='let channel of channelsList'>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        {{channel.fname}}
+        
+                                    </mat-panel-title>
+        
+                                </mat-expansion-panel-header>
+        
+                                <mat-form-field>
+                                    <input matInput placeholder="First name" value=" {{channel.fname}}">
+                                </mat-form-field>
+        
+                                <mat-form-field>
+                                    <mat-select placeholder="channel kind" name="type" [(ngModel)]="type" [value]="type">
+                                        <mat-option *ngFor="let kind of kinds" [value]="kind.value">
+                                            {{ kind.viewValue }}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+        
+                            </mat-expansion-panel>
+        
+                        </mat-accordion>
+                    </div>
+                </div>
+        <div class="col-xs-6">
+            <label for="">Private</label>
+
+            <div class="uk-width-3-5@m uk-width-1-1@s">
+                <mat-accordion *ngFor='let channel of groupsList'>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{channel.fname}}
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+
+                        <mat-form-field>
+                            <mat-select placeholder="channel kind" name="type" [(ngModel)]="type" [value]="type">
+                                <mat-option *ngFor="let kind of kinds" [value]="kind.value">
+                                    {{ kind.viewValue }}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                                <mat-select placeholder="users" name="user" [(ngModel)]="user" [value]="user" multiple>
+                                    <mat-option *ngFor="let users of usersList" [value]="users">{{users.username}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <button class="btn btn-primary" (click)='inviteUsers(channel._id)' mat-button>invite user</button>
+
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- </div> -->
+
+</div>
